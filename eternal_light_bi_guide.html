@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Eternal Light BI</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		}
+
+		#top {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		#top img {
+			width: 100%;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<!--완성된 pdf 이미지를 1320크기로 뽑아서, 죽 나열하시면 됩니다!-->
+	<div id="top">
+		<img src="./images/Eternal Light_BI_1.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_2.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_3.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_4.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_5.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_6.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_7.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_8.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+		<img src="./images/Eternal Light_BI_9.jpg" class="eternal_light"><!--가이드 이미지 경로 지정하기-->
+	</div>
+	<div class="fixed_box">
+		<a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+			<img src="images/top.png" alt="top">
+		</a>
+	</div>
+
+
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);//움직이는 시간 조정
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
