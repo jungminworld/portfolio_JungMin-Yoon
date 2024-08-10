@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">     
+<title>Sunset Beach Illust</title>
+    <style>
+        *{margin:0; 
+            padding:0; 
+            background-color: #2d2d2d;}
+
+        #wrapper{
+            width:1800px;
+            margin:140px auto;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{text-decoration:none;
+				color:inherit;}
+                
+        body {font-family: 'SUIT', sans-serif;}
+
+		.fixed_box{position:fixed;
+				bottom:40px;
+				right:30px;
+				width:40px;}
+
+        .home_btn, .top_btn{
+            display: inline-block;
+            width:55px;
+            line-height: 55px;
+            background-color: #a8a08c;
+            text-align: center;
+            border-radius:50%;
+            margin-bottom:5px;
+            color:#fff;
+            transition: all 0.5s;
+        }
+        .fixed_box a:hover{
+            background-color: #bdaf8c;
+        }
+
+        @media (max-width:1320px){
+            #wrapper{
+                width:100%;
+                margin:0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper iframe {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .img{padding: 10px;
+        width: 1320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;}
+
+        .img img{margin: 10px;}
+
+        h4{padding: 5px 0;}
+        .txt{
+            color: #fffaf6;
+            line-height: 1.3;
+            width: 300px;
+        margin: 0px;
+        /* margin: auto; */
+        padding-top: 300px;
+    }
+        .txt p{font-size: 14px;}
+        .kor{margin: 40px 0;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="img">
+            <img src="./images/구조원대기소1.jpg" alt="" width="45%" >
+            <img src="./images/구조원대기소2.jpg" alt="" width="45%">
+        </div>
+        <div class="txt">
+            <div class="kor">
+            <h3>구조원 대기소</h3>
+            <!-- <h4>서울 프린지페스티벌 2023</h4> -->
+            <p>
+                각 퍼포머들의 경험을 투영한 4인 퍼포먼스극<br>
+                4명의 목소리를 4칸의 구역으로 나타내었으며<br>
+                괴물을 뜻하는 녹로수를 시각화하기 위해<br>
+                비늘 사진을 활용하였습니다.
+            </p>
+            </div>
+
+            <div class="eng">
+                <h3>Sunset Beach Illust</h3>
+                <!-- <h4>Seoul Fringe Festival 2023</h4> -->
+                <p>A four-person performance reflecting <br>
+                    the experiences of each performer. <br>
+                    The performance is divided into four sections, <br>
+                    and scales were used to visualize Nokrosu, <br>
+                    which symbolizes a monster.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed_box">
+        <a href="index.html" class="home_btn">
+            Home
+        </a>
+    </div>
+</body>
+
+   
+    
+    
+</body>
+</html>
