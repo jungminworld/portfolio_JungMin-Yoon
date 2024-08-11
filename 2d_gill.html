@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">     
+<title>Gills Poster</title>
+    <style>
+        *{margin:0; 
+            padding:0; 
+            background-color: #2d2d2d;}
+
+        #wrapper{
+            width:1320px;
+            margin:100px auto;
+        }
+        a{text-decoration:none;
+				color:inherit;}
+                
+        body {font-family: 'SUIT', sans-serif;}
+
+		.fixed_box{position:fixed;
+				bottom:40px;
+				right:30px;
+				width:40px;}
+        .home_btn, .top_btn{
+            display: inline-block;
+            width:55px;
+            line-height: 55px;
+            background-color: #a8a08c;
+            text-align: center;
+            border-radius:50%;
+            margin-bottom:5px;
+            color:#fff;
+            transition: all 0.5s;
+        }
+        .fixed_box a:hover{
+            background-color: #bdaf8c;
+        }
+
+        @media (max-width:1320px){
+            #wrapper{
+                width:100%;
+                margin:0 auto;
+                position: relative;
+                height: 0;
+                padding-bottom: 56.25%;
+            }
+
+            #wrapper iframe {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        #wrapper{display: flex;
+        padding: 10px;}
+        .img{padding: 0px;
+        width: 700px;}
+        h4{padding: 5px 0;}
+        .txt{
+            color: #fffaf6;
+            line-height: 1.3;
+            width: 420px;
+        margin: 50px;
+        margin: auto;
+padding-top: 300px;}
+        .txt p{font-size: 14px;}
+        .kor{margin: 40px 0;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="img">
+            <img src="./images/poster_gill.jpg" alt="" width="100%">
+        </div>
+        <div class="txt">
+            <div class="kor">
+            <h3>아가미</h3>
+            <h4>2023 아프로 페스티벌</h4>
+            <p>
+                2023 아프로 페스티벌의 낭독 퍼포먼스작 <아가미> 포스터 디자인입니다. <br>
+                "아가미"는 물고기의 호흡 기관으로, 사람의 허파와 입(발화, 낭독, 호흡)과 <br> 
+                상응하며, 이를 상징적으로 시각화하였습니다. <br>
+                복잡한 선의 형태는 다양한 목소리와 메시지의 교차를 의미합니다. <br>
+                '아가미' 로고는 아가미의 형상을 반영하여 모음을 생략하고 <br>
+                자음을 겹친 독특한 형태로 디자인되었습니다.
+            </p>
+            </div>
+
+            <div class="eng">
+                <h3>Gill</h3>
+                <h4>A-PRO Festival 2023</h4>
+                <p>This poster was designed for the <br>
+                    2023 A-PRO Festival’s reading performance <br>
+                    “Gill”. “Gill”, which refers to the gills of a fish, <br>
+                    is symbolically visualized by corresponding it <br>
+                    with human lungs and the mouth (speech, reading, breathing). <br>
+                    The intricate line patterns represent the <br>
+                    chaotic intersection of diverse voices and messages. <br>
+                    The “Agami” logo is designed to reflect the shape of gills, <br>
+                    with vowels omitted and consonants layered <br>
+                    to create a unique form.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="fixed_box">
+        <a href="index.html" class="home_btn">
+            Home
+        </a>
+    </div>
+</body>
+
+   
+    
+    
+</body>
+</html>
