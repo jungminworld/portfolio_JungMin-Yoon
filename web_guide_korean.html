@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Web Guide</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./images/favicon1.png" type="image/x-icon">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		}
+
+		#top img {
+			width: 100%;
+		}
+
+		.home_btn,
+		.top_btn {
+			display: inline-block;
+			width: 55px;
+			line-height: 55px;
+			background-color: #a8a08c;
+			text-align: center;
+			border-radius: 50%;
+			margin-bottom: 5px;
+			color: #fff;
+			transition: all 0.5s;
+		}
+
+		.fixed_box a:hover {
+			background-color: #bdaf8c;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="top">
+		<img src="./image/web1.jpg" class="guide1">
+		<img src="./image/web2.jpg" class="guide1">
+		<img src="./image/web3.jpg" class="guide1">
+		<img src="./image/web4.jpg" class="guide1">
+		<img src="./image/web5.jpg" class="guide1">
+		<img src="./image/web6.jpg" class="guide1">
+		<img src="./image/web7.jpg" class="guide1">
+		<img src="./image/web8.jpg" class="guide1">
+		<img src="./image/web9.jpg" class="guide1">
+		<img src="./image/web10.jpg" class="guide1">
+		<img src="./image/web11.jpg" class="guide1">
+		<img src="./image/web12.jpg" class="guide1">
+		<img src="./image/web13.jpg" class="guide1">
+		<img src="./image/web14.jpg" class="guide1">
+		<img src="./image/web15.jpg" class="guide1">
+		<img src="./image/web16.jpg" class="guide1">
+		<img src="./image/web17.jpg" class="guide1">
+		<img src="./image/web18.jpg" class="guide1">
+		<img src="./image/web19.jpg" class="guide1">
+		<img src="./image/web20.jpg" class="guide1">
+		<img src="./image/web21.jpg" class="guide1">
+		<img src="./image/web22.jpg" class="guide1">
+		<img src="./image/web23.jpg" class="guide1">
+		<img src="./image/web24.jpg" class="guide1">
+		<img src="./image/web25.jpg" class="guide1">
+		<img src="./image/web26.jpg" class="guide1">
+		<img src="./image/web27.jpg" class="guide1">
+		<img src="./image/web28.jpg" class="guide1">
+		<img src="./image/web29.jpg" class="guide1">
+		<img src="./image/web30.jpg" class="guide1">
+		<img src="./image/web31.jpg" class="guide1">
+		<img src="./image/web32.jpg" class="guide1">
+		<img src="./image/web33.jpg" class="guide1">
+		<img src="./image/web34.jpg" class="guide1">
+		<img src="./image/web35.jpg" class="guide1">
+		<img src="./image/web36.jpg" class="guide1">
+		<img src="./image/web37.jpg" class="guide1">
+		<img src="./image/web38.jpg" class="guide1">
+		<!--가이드 이미지 경로 지정하기-->
+	</div>
+	<div class="fixed_box">
+		<a href="#top" class="top_btn">
+			<!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
+			TOP
+		</a>
+		<a href="index.html" class="home_btn">
+			Home
+		</a>
+	</div>
+
+
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);//움직이는 시간 조정
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
