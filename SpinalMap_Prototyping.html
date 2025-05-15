@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Spinal Map_Prototyping</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			background-color: #000;
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		body{
+			color: #000;
+			    font-family: "Noto Sans", sans-serif;
+  				font-optical-sizing: auto;
+  				/* font-weight: <weight>; */
+  				font-style: normal;
+  				font-variation-settings:
+    			"wdth" 100;
+		}
+
+        #wrapper{
+            width:1320px;
+            margin: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+        }
+    	.txt{
+    	    color: #fffaf6;
+    	    line-height: 1.3;
+    	    width: 800px;
+    		margin: 0px;
+    		margin: auto;
+    		/* padding-top: 250px */
+		}
+		h3{padding: 5px 0;}
+    	.txt p{font-size: 14px;}
+		
+		video {
+			vertical-align: middle;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		} 
+
+		#top {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+		#top img {
+			width: 100%;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div class="txt">
+    		<h3>프로토타이핑 (Prototyping)</h3><br>
+    		<p>
+    		앱 실행부터 초기 자가 진단, 스트레칭 화면, 기록 화면까지<br>
+			홈화면 내 기능들을 구현한 프로토타이핑 영상입니다.<br>
+    		</p>
+    	</div>
+	<video src="./images/spinal_map.mp4" class="spinal_map" width="450px" autoplay muted loop playsinline><video>
+	</div>
+
+	<!-- <div class="fixed_box">
+		<a href="#top" class="top_btn">
+			href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.
+			<img src="images/top.png" alt="top">
+		</a>
+	</div> -->
+
+
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);//움직이는 시간 조정
+						return false;
+					}
+				}
+			});
+		});
+	</script> -->
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
