@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Eternal Light BI</title>
+	<title>Spinal Map</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,7 @@
 		* {
 			margin: 0;
 			padding: 0;
+			background-color: #000;
 		}
 
 		a {
@@ -18,9 +19,9 @@
 		}
 
 		body{
-			color: #000
+			color: #000;
 		}
-
+		
 		img {
 			vertical-align: middle;
 		}
@@ -32,7 +33,7 @@
 			width: 40px;
 		}
 
-		#top {
+		#page {
 			max-width: 1320px;
 			margin: 0 auto;
 		}
@@ -45,10 +46,13 @@
 </head>
 
 <body>
+	<div id="page">
+    <img src="./images/figma_portfolio.png" alt="portfolio" width="1320px">
+    </div>
 	<!--완성된 pdf 이미지를 1320크기로 뽑아서, 죽 나열하시면 됩니다!-->
-	<div id="top">
-		<img src="./images/figma_portfolio.png" class="spinal_map"><!--가이드 이미지 경로 지정하기-->
-	</div>
+	<!-- <div id="top">
+		<img src="./images/top.png" class="spinal_map">
+	</div> -->
 	<div class="fixed_box">
 		<a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
 			<img src="images/top.png" alt="top">
