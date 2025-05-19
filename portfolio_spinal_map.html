@@ -10,7 +10,7 @@
 		* {
 			margin: 0;
 			padding: 0;
-			background-color: #000;
+			/* background-color: #000; */
 		}
 
 		a {
@@ -19,7 +19,7 @@
 		}
 
 		body{
-			color: #000;
+			background-color: #000;
 		}
 		
 		img {
@@ -33,29 +33,35 @@
 			width: 40px;
 		}
 
+		.fixed_box p{color: #fff;}
+
+		.top{display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(204, 204, 204, 0.5);
+		color: #fff;
+		border-radius: 50%;
+		font-size: 14px;
+		}
+
 		#page {
 			max-width: 1320px;
 			margin: 0 auto;
 		}
 
-		#top img {
-			width: 100%;
-			display: block;
-		}
 	</style>
 </head>
 
 <body>
 	<div id="page">
-    <img src="./images/figma_portfolio.png" alt="portfolio" width="1320px">
+    	<img src="./images/figma_portfolio.png" alt="portfolio" width="1320px">
     </div>
 	<!--완성된 pdf 이미지를 1320크기로 뽑아서, 죽 나열하시면 됩니다!-->
-	<!-- <div id="top">
-		<img src="./images/top.png" class="spinal_map">
-	</div> -->
 	<div class="fixed_box">
-		<a href="#top" class="top_btn"><!--href부분은 이미지를 감싼 div에 있는 id이름과 동일하게 설정.-->
-			<img src="images/top.png" alt="top">
+		<a href="#top" class="top">
+			Top
 		</a>
 	</div>
 
