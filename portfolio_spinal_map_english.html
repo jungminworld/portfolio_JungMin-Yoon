@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Spinal Map</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			/* background-color: #000; */
+		}
+
+		a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		body{
+			background-color: #000;
+		}
+		
+		img {
+			vertical-align: middle;
+		}
+
+		.fixed_box {
+			position: fixed;
+			bottom: 40px;
+			right: 30px;
+			width: 40px;
+		}
+
+		.fixed_box p{color: #fff;}
+
+		.top{display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		background-color: rgba(204, 204, 204, 0.5);
+		color: #fff;
+		border-radius: 50%;
+		font-size: 14px;
+		}
+
+		#page {
+			max-width: 1320px;
+			margin: 0 auto;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="page">
+    	<img src="./images/figma_portfolio_english.png" alt="portfolio" width="1320px">
+
+    </div>
+	<!--완성된 pdf 이미지를 1320크기로 뽑아서, 죽 나열하시면 됩니다!-->
+	<div class="fixed_box">
+		<a href="#top" class="top">
+			Top
+		</a>
+	</div>
+
+
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 시작. script쪽 전부 삭제가능.-->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+			$('a[href*="#"]:not([href="#"])').click(function () {
+				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+					if (target.length) {
+						$('html, body').animate({
+							scrollTop: target.offset().top
+						}, 500);//움직이는 시간 조정
+						return false;
+					}
+				}
+			});
+		});
+	</script>
+	<!--이동시 부드럽게 이동시키기 위해 추가한 구문 끝. 삭제가능.-->
+</body>
+
+</html>
