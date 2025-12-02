@@ -206,6 +206,7 @@
 
         #scroll_banner{
             background: url(./images/NotMyArm/notmyarm_stage.png) no-repeat center center fixed;
+            width: 100%; /* 사파리에서 이상해서 일단 써봄.. */
             height: 450px;
         }
 
@@ -214,6 +215,10 @@
           background-size: cover;
           height: 450px;
         } */
+
+        .gray_gradient{width: 100%;
+        object-fit: cover; /* 배너 영역 꽉 채우기 */
+        display: block;      /* inline-block 기본 마진 제거 */}
 
         #gradient_3{background: #fff;
         height: 300px;}
