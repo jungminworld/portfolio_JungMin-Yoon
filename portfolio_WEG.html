@@ -32,15 +32,16 @@
 
 		video{position: relative;}
 		.coogee, .barangaroo, .halloween{
-			width: 260px !important; 
+			width: 300px !important; 
+			height: auto;        /* 비율 유지 */
 			border-radius: 20px;  /* 4개의 모서리 모두 20px 둥글게 */
     		overflow: hidden;
 		}
 
 		.coogee {
 		position: absolute;
-		top: 11000px;      /* 부모 기준 y 위치 */
-		left: 530px;    /* 부모 기준 x 위치 */
+		top: 12000px;      /* 부모 기준 y 위치 */
+		left: 730px;    /* 부모 기준 x 위치 */
 		width: 400px;   /* 원하는 크기 */
 		z-index: 2;     /* 겹칠 때 순서 */
 		}
@@ -55,8 +56,6 @@
 
 		.halloween {
 			position: absolute;
-			width: 260px;      /* 고정 너비 */
-    		height: auto;        /* 비율 유지 */
 			top: 13600px;
 			left: 730px;
 			width: 400px;
